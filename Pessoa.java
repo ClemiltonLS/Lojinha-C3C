@@ -1,4 +1,4 @@
-public class Pessoa{
+public abstract class Pessoa{
     private String nome; 
     private String rg;
     private int cpf;
@@ -11,9 +11,10 @@ public class Pessoa{
         this.nome = n;
         this.cpf = c;
     }
-    public Pessoa(){
+	public Pessoa(){}
+    
+	public abstract void falar();
 
-    }
     public String getNome() {
 		return nome;
 	}
